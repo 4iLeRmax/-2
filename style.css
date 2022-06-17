@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  padding: 0 6%;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: relative;
+}
+nav {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+}
+.logo span
+{
+  color: rgb(202, 13, 13);
+}
+nav ion-icon{
+  display: none;
+}
+.navLinks li{
+  display: inline-block;
+  margin: 10px 60px;
+}
+.navLinks li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  transition: .15s;
+}
+.navLinks li a:hover {
+  color: #000;
+}
+.content {
+  margin-top:120px;
+  max-width: 550px;
+}
+.content h1 {
+  font-size: 62px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.content p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #555;
+}
+.content img {
+  margin-top: 80px;
+}
+
+
+
+.Right {
+  padding: 0 6%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.LeftCol {
+  text-align: right;
+  margin: 0 150px;
+}
+.LeftCol h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.LeftCol p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #555;
+}
+.RightCol img{
+  width: 500px;
+}
+
+
+
+.footer {
+  margin-top: 150px;
+  padding: 40px 10%;
+}
+.footer hr
+{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.footer .main {
+  display: flex;
+  justify-content: space-between;
+}
+.Col .logo {
+  display: inline-block;
+  background: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.Col h1 {
+  color: #000;
+  margin-bottom: 10px;
+}
+.Col p{
+  color: #555;
+  line-height: 35px;
+}
+.Col .p {
+  line-height: 22px;
+}
+.socialLinks {
+  margin: 20px 0;
+}
+.socialLinks a {
+  margin-right: 20px;
+}
+.socialLinks a ion-icon {
+  font-size: 25px;
+  color: #555;
+}
+.user {
+  margin-top: 40px;
+  display: block;
+  text-align: right;
+}
+.user h1 {
+  font-size: 15px;
+  color: #555;
+}
+
+@media (max-width: 1200px) {
+  .content{
+    margin-top: 100px;
+    max-width: 400px;
+  }
+  .content h1{
+    font-size: 40px;
+  }
+  .content p{
+    font-size: 20px;
+  }
+  .content img{
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header{
+    background-size: cover;
+    background-position: right;
+    padding: 0;
+    max-width: 480px;
+  }
+  .header nav{
+    padding: 20px 0;
+    background: #fff;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.7);
+    transition: height .5s;
+    
+  }
+  .logo{
+    width: 100%;
+    padding: 8px 15px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  nav ion-icon{
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    font-size: 30px;
+    color: #000;
+  }
+  .navLinks li{
+    display: block;
+    margin-top: 60px;
+  }
+  .navLinks li a{
+    color: #000;
+  }
+  nav.white{
+    height: 350px;
+  }
+  .content{
+    margin: 200px 0 0 0;
+    text-align: center;
+  }
+  .content h1{
+    color: #fff;
+  }
+  .content p{
+    color: #fff;
+  }
+  .row{
+    /* display: block;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+  }
+  .LeftCol{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .footer .main{
+    display: flex;
+    flex-direction: column;
+  }
+}
